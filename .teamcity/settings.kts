@@ -1,5 +1,7 @@
-import jetbrains.buildServer.configs.kotlin.v2019_2.*
-
+#import jetbrains.buildServer.configs.kotlin.v2019_2.*
+import jetbrains.buildServer.configs.kotlin.project
+import jetbrains.buildServer.configs.kotlin.vcs.GitVcsRoot
+import jetbrains.buildServer.configs.kotlin.version
 /*
 The settings script is an entry point for defining a TeamCity
 project hierarchy. The script should contain a single call to the
@@ -25,7 +27,7 @@ To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 version = "2020.2"
 
 project {
-
+    name = id + "_projname"
     buildType(A)
     buildType(BuildConfig1)
 }
@@ -38,14 +40,7 @@ object A : BuildType({
 
 object BuildConfig1 : BuildType({
 
-    private val project: Project
-
-    constructor(project: Project) : super() {
-        this.project = project
-        this.id = RelativeId("${(project.id as RelativeId).relativeId}_Build")
-        this.name = "Hello"
-    }
-
+name = "BuildConfig1"
 })
 
 
