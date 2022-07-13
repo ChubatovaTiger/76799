@@ -35,8 +35,8 @@ object A : BuildType({
 })
 
 object BuildConfig1 : BuildType({
-    name = "buildConfig1"
-    this.id = "${this@Project.version}_Build"
+    name = "${this@Project.id}_Build"
+
 })
 
 
