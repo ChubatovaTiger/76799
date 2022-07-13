@@ -30,6 +30,11 @@ project {
     /*name = "namebegin_" + id + "_nameend"*/
     buildType(A)
     buildType(BuildConfig1)
+        params {
+
+            param("par", "par")
+        
+    }
 }
 
 object A : BuildType({
