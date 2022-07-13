@@ -28,7 +28,7 @@ version = "2020.2"
 
 project {
 
-    var b = "namebegin_" + id + "_nameend"
+    var b = "namebegin2_" + id + "_nameend"
 
     buildType(BuildConfig1)
     params {
