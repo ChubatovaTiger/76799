@@ -34,8 +34,20 @@ object A : BuildType({
     name = "buildConfig2"
 })
 
-object BuildConfig1 : BuildType({
-    name = "${Project.name}_Build"
+class MyBuild : BuildType {
+
+    private val project: Project
+
+    constructor(project: Project) : super() {
+        this.project = project
+        this.id = RelativeId("${(project.id as RelativeId).relativeId}_Build")
+        this.name = "Hello"
+    }
+
+}
+
+object BuildConfig1 : MyBuild({
+
 
 })
 
