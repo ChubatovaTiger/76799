@@ -33,7 +33,7 @@ project {
     buildType(BuildConfig1)
         params {
 
-            param("par", b )
+            param(b, b )
         
     }
 }
