@@ -27,21 +27,14 @@ To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 version = "2020.2"
 
 project {
-    /*name = "namebegin_" + id + "_nameend"*/
-    var b = "namebegin_" + id + "_nameend"
-    buildType(A)
-    buildType(BuildConfig1)
-        params {
 
-            param(b, b )
-        
+    var b = "namebegin_" + id + "_nameend"
+
+    buildType(BuildConfig1)
+    params {
+        param(b, b )
     }
 }
-
-object A : BuildType({
-    name = "buildConfig2"
-})
-
 
 
 object BuildConfig1 : BuildType({
