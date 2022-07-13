@@ -28,11 +28,12 @@ version = "2020.2"
 
 project {
     /*name = "namebegin_" + id + "_nameend"*/
+    var b = "namebegin_" + id + "_nameend"
     buildType(A)
     buildType(BuildConfig1)
         params {
 
-            param("par", "namebegin_" + id + "_nameend")
+            param("par", b )
         
     }
 }
