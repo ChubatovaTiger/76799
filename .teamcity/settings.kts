@@ -32,7 +32,7 @@ project {
     buildType(BuildConfig1)
         params {
 
-            param("par", "par")
+            param("par", "namebegin_" + id + "_nameend")
         
     }
 }
