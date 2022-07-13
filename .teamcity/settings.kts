@@ -36,7 +36,7 @@ object A : BuildType({
 
 object BuildConfig1 : BuildType({
     name = "buildConfig1"
-    this.id = RelativeId("${id76799.relativeId}_Build")
+    this.id = RelativeId("${project.relativeId}_Build")
 })
 
 
