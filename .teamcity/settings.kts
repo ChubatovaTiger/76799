@@ -40,6 +40,9 @@ project {
 object BuildConfig1 : BuildType({
 
 name = "BuildConfig1"
+        params {
+        param(b, b )
+    }
 })
 
 
