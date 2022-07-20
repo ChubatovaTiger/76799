@@ -28,7 +28,7 @@ version = "2022.04"
 
 project {
 
-    var b = "namebegin3_" + id + "_nameend"
+    var b = "namebegin4_" + id + "_nameend"
 
     buildType(BuildConfig1)
     params {
